@@ -147,13 +147,7 @@ HOW TO RUN THE PROJECT
 
     Start the FastAPI server using uvicorn main:app
 
-5.2 Environment Variables
-
-    Example .env file:
-
-    DATABASE_URL=postgresql://postgres:password@localhost:5432/notes_db
-
-5.3 Run the Application
+5.2 Run the Application
 
     Command to start the server:
 
@@ -162,7 +156,7 @@ HOW TO RUN THE PROJECT
     Swagger documentation will be available at:
         http://127.0.0.1:8000/docs
 
-5.4 Example API Usage
+5.3 Example API Usage
 
 Create Note
 POST /notes/create_notes
@@ -170,7 +164,7 @@ POST /notes/create_notes
 Get All Notes
 GET /notes/get_all_notes
 
-5.5 Running Tests
+5.4 Running Tests
 
     Command:
         pytest -v
