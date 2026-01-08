@@ -1,15 +1,16 @@
-import pytest
+import notes_test
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
-from app.main import app
+import pytest
+from main import app
 from app.models.notes import Note
 from database import get_db
-from app.services import summarizer
+import summarizer
+
 
 # -----------------------------
-# Test Database (SQLite)
+# Test Database (PostgreSQL)
 # -----------------------------
 SQLALCHEMY_DATABASE_URL = "postgresql://postgres:123456@localhost:5432/notes_db"
 
